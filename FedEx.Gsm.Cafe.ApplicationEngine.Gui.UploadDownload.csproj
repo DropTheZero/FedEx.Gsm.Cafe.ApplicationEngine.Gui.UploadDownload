@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files (x86)\FedEx\ShipManager\BIN\FedEx.Gsm.Cafe.ApplicationEngine.Gui.UploadDownload.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8F2583C8-4049-4D82-AE93-FF36EB24C067}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>FedEx.Gsm.Cafe.ApplicationEngine.Gui.UploadDownload</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>38.55.1083.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>FedEx.Gsm.Cafe.ApplicationEngine.Gui.UploadDownload</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FedEx.Gsm.Cafe.ApplicationEngine.Controller">
+      <HintPath>lib\FedEx.Gsm.Cafe.ApplicationEngine.Controller.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.Cafe.ApplicationEngine.Gui.Data">
+      <HintPath>lib\FedEx.Gsm.Cafe.ApplicationEngine.Gui.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.Cafe.ApplicationEngine.Gui.Eventing">
+      <HintPath>lib\FedEx.Gsm.Cafe.ApplicationEngine.Gui.Eventing.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.Cafe.ApplicationEngine.Gui.UserControls">
+      <HintPath>lib\FedEx.Gsm.Cafe.ApplicationEngine.Gui.UserControls.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.Cafe.ApplicationEngine.Gui.UtilityFunctions">
+      <HintPath>lib\FedEx.Gsm.Cafe.ApplicationEngine.Gui.UtilityFunctions.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.Common.ConfigManager">
+      <HintPath>lib\FedEx.Gsm.Common.ConfigManager.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.Common.Languafier">
+      <HintPath>lib\FedEx.Gsm.Common.Languafier.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.Common.Logging">
+      <HintPath>lib\FedEx.Gsm.Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.ShipEngine.DataAccess">
+      <HintPath>lib\FedEx.Gsm.ShipEngine.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.ShipEngine.Entities">
+      <HintPath>lib\FedEx.Gsm.ShipEngine.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DemandDownload.cs" />
+    <Compile Include="DownloadTypes.cs" />
+    <Compile Include="Status.cs" />
+    <Compile Include="DownloadStatus.cs" />
+    <Compile Include="Upload.cs" />
+    <Compile Include="Resources\UploadDownload.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DemandDownload.resx" />
+    <EmbeddedResource Include="DownloadStatus.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+    <EmbeddedResource Include="Resources\dd_failure.bmp" />
+    <EmbeddedResource Include="Resources\dd_pending.bmp" />
+    <EmbeddedResource Include="Resources\dd_success.bmp" />
+    <EmbeddedResource Include="Resources\UploadDownload.resx" />
+    <EmbeddedResource Include="Upload.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
